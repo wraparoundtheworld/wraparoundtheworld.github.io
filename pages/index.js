@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import { Button, Icon } from '@react95/core';
+import { Button } from '@react95/core';
+import { Access229 } from '@react95/icons';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Icon name="access_229_32x32_4bit" />
+      <Access229 variant="32x32_4" />
 
       <Button>Hello</Button>
     </div>
