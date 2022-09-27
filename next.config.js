@@ -1,4 +1,13 @@
 const withFonts = require('next-fonts');
-const withTM = require('next-transpile-modules')(['@react95/core']);
+const withImages = require('next-images');
+const withTM = require('next-transpile-modules')([
+  '@react95/core',
+  '@react95/icons',
+]);
 
-module.exports = withTM(withFonts());
+module.exports = {
+  ...withTM(withFonts(withImages())),
+  images: {
+    disableStaticImages: true,
+  },
+};
