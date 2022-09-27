@@ -5,9 +5,10 @@ const withTM = require('next-transpile-modules')([
   '@react95/icons',
 ]);
 
-module.exports = {
-  ...withTM(withFonts(withImages())),
+const nextConfig = {
   images: {
     disableStaticImages: true,
   },
 };
+
+module.exports = withTM(withFonts(withImages(nextConfig)));
