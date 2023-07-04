@@ -3,10 +3,12 @@ import {  Button, Modal, List, Frame, TaskBar, Calendar} from "@react95/core";
 import Desktop from "./components/desktop";
 import styled from 'styled-components';
 import { Shortcut } from '@react95/icons';
+import MonicaHenrique_pixelated from "../Monica_HenriquepxArt.png";
+import { height } from '@xstyled/styled-components';
 
 
 const InsideModal = styled(Frame)`
-  overflow-y: auto;
+  
 
   p,
   ol {
@@ -21,6 +23,8 @@ const InsideModal = styled(Frame)`
   p:last-child {
     margin-bottom: 0;
   }
+
+  
 `;
 
 export default function Home() {
@@ -36,10 +40,10 @@ export default function Home() {
         <Modal
           title='Casamento.exe'
           style={{
-            top: 0,
-            height: '100%',
-            width: '100%',
+            overflow:'auto',
+            height:'50%'
           }}
+
           menu={[
             {
               name: "Options",
@@ -55,12 +59,24 @@ export default function Home() {
         >
 
           <InsideModal bg="white" boxShadow="out">
-
-
-            <h1 >Monica & Henrique</h1>
-            <h2>São Paulo . 13 Abril 2024</h2>
+            <h1 class="centered">Monica & Henrique</h1>
+            <br></br>
+            <h2 class="centered">São Paulo. 13 Abril 2024</h2>
             <br></br>
             <br></br>
+
+              <img
+                style={{
+                  height: '50%',
+                  width: '50%',
+                  display: 'block',
+                  marginLeft: 'auto',
+                  marginRight: 'auto'
+                }}
+                src={MonicaHenrique_pixelated}
+                alt="Monica & Henrique & Sophia"
+              />     
+
 
             <h2>Vamos nos casar!</h2>
             <p>
