@@ -1,24 +1,27 @@
 .centered {
-    text-align: center;
-    margin: auto;
-  }
+  text-align: center;
+  margin: auto;
+}
 
 .image-centered {
-  height: '20px';
-  width: '20px';
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+height: '20px';
+width: '20px';
+display: block;
+margin-left: auto;
+margin-right: auto;
 }
 
 .image-text {
-    margin: auto;
-    padding-top: 5px;
+  margin: auto;
+  padding-top: 5px;
 }
 
 .modal-casamento {
-  top: 0;
-  height: '100%';
-  width: '100%';
-  overflow:'auto'  
+height: 50%;
+display: flex;  
+}
+
+.background {
+background-image: url("/Monica_HenriquepxArt.png");
+background-size: cover;
 }
