@@ -1,12 +1,11 @@
 import Head from 'next/head';
-import { Modal, List, Frame, TaskBar, Calendar} from "@react95/core";
+import { Modal, List, Frame, TaskBar} from "@react95/core";
 import styled from 'styled-components';
 import MonicaHenrique_pixelated from "../Monica_HenriquepxArt.png";
 import { Drvspace7 } from "@react95/icons";
 
 const dataFormatada = function()
 {
-
   let _second = 1000;
   let _minute = _second * 60;
   let _hour = _minute * 60;
@@ -22,11 +21,11 @@ const dataFormatada = function()
   return d + ' dias ' + h +' horas ' + m + ' minutos ' + s + ' segundos';
 };
 
-const data = dataFormatada();
+const dataRegressiva = dataFormatada();
 
 const InsideModal = styled(Frame)`
   overflow-y: 'auto';
-  
+
   p,
   ol {
     margin-top: 6px;
@@ -41,8 +40,11 @@ const InsideModal = styled(Frame)`
     margin-bottom: 0;
   }
   
-`;
+  text-align: center;
 
+  margin: auto;
+
+`;
 
 export default function Home() {
   return (
@@ -52,7 +54,6 @@ export default function Home() {
           <title>Create Next App</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-
         <Modal
           title='Casamento.exe'
           style={{
@@ -70,12 +71,9 @@ export default function Home() {
               ),
             },
           ]}
-          
-          //closeModal={() => navigate('/')}
         >
-
           <InsideModal bg="white" boxShadow="out">
-            <div class="centered">
+            <div>
               <br></br>
               <h1 >Monica & Henrique</h1>
               <br></br>
@@ -104,7 +102,7 @@ export default function Home() {
               <br></br>
               <br></br>
               <h2>Faltam:</h2>
-              {data}
+              {dataRegressiva}
               <br></br>
               <br></br>
               <h2>Endereco</h2>
@@ -118,7 +116,6 @@ export default function Home() {
             </div>
           </InsideModal>
         </Modal>
-
       <TaskBar
         list={
           <List>
@@ -127,11 +124,20 @@ export default function Home() {
             >
               Lista de Presentes
             </List.Item>
+            <List.Item
+             //icon={<FolderExe2 variante="32x32_4"/>}
+            >
+              Confirmação de presença
+            </List.Item>
+            <List.Item
+             //icon={<FolderExe2 variante="32x32_4"/>}
+            >
+              Quem fez esse site?
+            </List.Item>
 
           </List>
         }
-      />
-        
+      />        
     </div>
   );
 }
