@@ -4,11 +4,11 @@ import MonicaHenrique_pixelated from "../Monica_HenriquepxArt.png";
 
 export default function App({ Component, pageProps }) {
   return (
-    
+    <body>
       <ThemeProvider>
         <GlobalStyle />
         <Component {...pageProps} />
-      </ThemeProvider>   
-   
+      </ThemeProvider>
+    </body>
   );
 }

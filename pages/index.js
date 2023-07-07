@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { Modal, List, Frame, TaskBar} from "@react95/core";
 import styled from 'styled-components';
 import MonicaHenrique_pixelated from "../Monica_HenriquepxArt.png";
-import { Drvspace7 } from "@react95/icons";
+import { Drvspace7, Issue, FilePin, Packager1 } from "@react95/icons";
 
 const dataFormatada = function()
 {
@@ -24,26 +24,10 @@ const dataFormatada = function()
 const dataRegressiva = dataFormatada();
 
 const InsideModal = styled(Frame)`
-  overflow-y: 'auto';
-
-  p,
-  ol {
-    margin-top: 6px;
-  }
-
-  p,
-  li:not(:last-child) {
-    margin-bottom: 6px;
-  }
-
-  p:last-child {
-    margin-bottom: 0;
-  }
-  
+  overflow-y: 'auto';  
   text-align: center;
-
-  margin: auto;
-
+  max-height: 70vh;
+  max-width: 90vh;
 `;
 
 export default function Home() {
@@ -57,8 +41,9 @@ export default function Home() {
         <Modal
           title='Casamento.exe'
           style={{
-            display: 'flex',
-            margin:'1rem 1rem 1rem 1rem'
+            margin:'1rem 1rem 1rem 1rem',
+            height: '80vh',
+            display: 'flex'
           }}
           icon={<Drvspace7 variant="32x32_4" />}
           menu={[
@@ -73,7 +58,12 @@ export default function Home() {
           ]}
         >
           <InsideModal bg="white" boxShadow="out">
-            <div>
+            <div           
+              style={{
+              height: '100%',
+              overflow : 'auto',
+              padding: '20px'
+            }}>
               <br></br>
               <h1 >Monica & Henrique</h1>
               <br></br>
@@ -120,21 +110,21 @@ export default function Home() {
         list={
           <List>
             <List.Item
-             //icon={<FolderExe2 variante="32x32_4"/>}
+             icon={<Packager1 variant="32x32_4" />}
             >
               Lista de Presentes
             </List.Item>
             <List.Item
-             //icon={<FolderExe2 variante="32x32_4"/>}
+             icon={<FilePin variant="32x32_4" />}
             >
               Confirmação de presença
             </List.Item>
+            <List.Divider />
             <List.Item
-             //icon={<FolderExe2 variante="32x32_4"/>}
+             icon={<Issue variant="32x32_4" />}
             >
-              Quem fez esse site?
+              Github
             </List.Item>
-
           </List>
         }
       />        
