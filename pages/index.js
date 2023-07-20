@@ -2,8 +2,9 @@ import { useState, useCallback } from 'react';
 import Head from 'next/head';
 import { Modal, List, Frame, TaskBar} from "@react95/core";
 import styled from 'styled-components';
-import MonicaHenrique_pixelated from "../Monica_HenriquepxArt.png";
-import Heart from "../heart.gif"
+import MonicaHenrique_pixelated from "../public/image/Monica_HenriquepxArt.png";
+import Heart from "../public/image/heart.gif"
+import Pix from "../public/image/qrcode-pix.png"
 import { Drvspace7, Issue, FilePin, Packager1, Mmsys112 } from "@react95/icons";
 
 const dataFormatada = function()
@@ -150,6 +151,22 @@ export default function Home() {
             <h2>Lista de Presentes</h2>
             <br></br>
             <br></br>
+            <p>Você pode fazer um pix direto pra gente</p>
+            <br></br>
+            <br></br>
+            <img
+              style={{
+                height: 'auto',
+                width: '50%',
+                display: 'block',
+                marginLeft: 'auto',
+                marginRight: 'auto'
+              }}
+              src={Pix}
+              alt="QrCode do Pix"
+              href="https://nubank.com.br/pagar/48wth/mGWKfQeR5q"
+            />            
+            <a href="https://nubank.com.br/pagar/48wth/mGWKfQeR5q">Pague aqui</a>
           </div>
         </InsideModal>
       </Modal>}
@@ -176,13 +193,13 @@ export default function Home() {
             },
           ]}>
      <iframe 
-              src="https://open.spotify.com/embed/playlist/5eGxfvGynjkVO96JtlaBPE?utm_source=generator&theme=0" 
-              width="100%" 
-              height="100%" 
-              frameBorder="0" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"
-              title="Músicas para lembrar da Mo">
+        src="https://open.spotify.com/embed/playlist/5eGxfvGynjkVO96JtlaBPE?utm_source=generator&theme=0" 
+        width="100%" 
+        height="100%" 
+        frameBorder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy"
+        title="Músicas para lembrar da Mo">
       </iframe>
   </Modal>
   }
