@@ -103,9 +103,9 @@ export default function Home() {
           }}>
             <br></br>
             <div>
-              <img src={Heart} style={{display: 'inline-block'}}></img>
-              <h1 style={{display: 'inline-block'}} >Monica & Henrique</h1> 
-              <img src={Heart} style={{display: 'inline-block'}}></img>
+              <img src={Heart} style={{display: 'inline-block', verticalAlign:'middle'}}></img>
+              <h1 style={{display: 'inline-block', marginLeft: '20px', marginRight: '20px'}} >Monica & Henrique</h1> 
+              <img src={Heart} style={{display: 'inline-block', verticalAlign:'middle'}}></img>
             </div>
             <br></br>
             <h2>São Paulo. 13 Abril 2024</h2>
@@ -133,7 +133,7 @@ export default function Home() {
             <br></br>
             <br></br>
             <h2>Faltam:</h2>
-            {dataRegressiva}
+            
             <br></br>
             <br></br>
             <h2>Endereco</h2>
@@ -171,8 +171,8 @@ export default function Home() {
         </InsideModal>
       </Modal>}
 
-{/* Modal do spotify  */}
-{showSpotifyModal && <Modal
+  {/* Modal do spotify  */}
+  {showSpotifyModal && <Modal
           title='Playlist do casamento.exe'
           style={{
             margin:'1rem 1rem 1rem 1rem',
