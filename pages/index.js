@@ -31,8 +31,10 @@ const InsideModal = styled(Frame)`
   text-align: center;
   max-height: 70vh;
   max-width: 90vh;
+  height: 100%;
+  overflow : auto;
+  padding: 20px;
 `;
-
 
 export default function Home() {
 
@@ -63,24 +65,18 @@ export default function Home() {
   }
 
 
-  return (
-    
-    <div className="container">
+  return (    
+    <div>
 
       <Head>
         <title>Henrique e Monica</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
       {/* Modal do Casamento */}
       {showCasamentoModal && <Modal
+        className='modal'
         title='Casamento.exe'
-        style={{
-          margin:'1rem 1rem 1rem 1rem',
-          height: '80vh',
-          display: 'flex'
-        }}
         closeModal={handleCloseCasamentoModal}
         icon={<Drvspace7 variant="32x32_4" />}
         menu={[
@@ -95,32 +91,21 @@ export default function Home() {
         ]}
       >
         <InsideModal bg="white" boxShadow="out">
-          <div           
-            style={{
-            height: '100%',
-            overflow : 'auto',
-            padding: '20px'
-          }}>
+          <div>
             <br></br>
             <div>
-              <img src={Heart} style={{display: 'inline-block', verticalAlign:'middle'}}></img>
-              <h1 style={{display: 'inline-block', marginLeft: '20px', marginRight: '20px'}} >Monica & Henrique</h1> 
-              <img src={Heart} style={{display: 'inline-block', verticalAlign:'middle'}}></img>
+              <img src={Heart} className='heart'></img>
+              <h1 className='titulo' >Monica & Henrique</h1> 
+              <img src={Heart} className='heart'></img>
             </div>
             <br></br>
             <h2>São Paulo. 13 Abril 2024</h2>
             <br></br>
             <br></br>
             <img
-              style={{
-                height: '50%',
-                width: '50%',
-                display: 'block',
-                marginLeft: 'auto',
-                marginRight: 'auto'
-              }}
+              className='image-center'
               src={MonicaHenrique_pixelated}
-              alt="Monica & Henrique & Sophia"
+              alt="Monica & Henrique & Sophia"              
             />
             <h2>Vamos nos casar!</h2>
             <p>
@@ -155,13 +140,7 @@ export default function Home() {
             <br></br>
             <br></br>
             <img
-              style={{
-                height: 'auto',
-                width: '50%',
-                display: 'block',
-                marginLeft: 'auto',
-                marginRight: 'auto'
-              }}
+              className='image-center'
               src={Pix}
               alt="QrCode do Pix"
               href="https://nubank.com.br/pagar/48wth/mGWKfQeR5q"
@@ -174,12 +153,7 @@ export default function Home() {
   {/* Modal do spotify  */}
   {showSpotifyModal && <Modal
           title='Playlist do casamento.exe'
-          style={{
-            margin:'1rem 1rem 1rem 1rem',
-            height: '43vh',
-            width: '50vw',
-            display: 'flex'
-          }}
+          className='modal-spotify'
           icon={<Mmsys112 variant="32x32_4" />}
           closeModal={handleCloseSpotifyModal }
           menu={[
