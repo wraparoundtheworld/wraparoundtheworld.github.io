@@ -1,11 +1,11 @@
 import { useState, useCallback } from 'react';
 import Head from 'next/head';
-import { Modal, List, Frame, TaskBar} from "@react95/core";
+import { Modal, List, Frame, TaskBar, Fieldset, Input, Button} from "@react95/core";
 import styled from 'styled-components';
 import MonicaHenrique_pixelated from "../public/image/Monica_HenriquepxArt.png";
 import Heart from "../public/image/heart.gif"
 import Pix from "../public/image/qrcode-pix.png"
-import { Drvspace7, Issue, FilePin, Packager1, Mmsys112 } from "@react95/icons";
+import { Drvspace7, Issue, FilePin, Packager1, Mmsys112, Explorer108 } from "@react95/icons";
 
 const dataFormatada = function()
 {
@@ -36,6 +36,7 @@ const InsideModal = styled(Frame)`
   padding: 20px;
 `;
 
+
 export default function Home() {
 
   /* Spotify Modal */
@@ -59,11 +60,56 @@ export default function Home() {
     setShowCasamentoModal(false);
   }, []);
 
+  /* Confirmação de casamento */
+  const [showConfirmacaoModal, setShowConfirmacaoModal] = useState(false);
+
+  const handleOpenConfirmacaoModal = useCallback(() => {
+    setShowConfirmacaoModal(true);
+  }, []);
+
+  const handleCloseConfirmacaoModal = useCallback(() => {
+    setShowConfirmacaoModal(false);
+  }, []);
+
+  const inputArr = [
+    {
+      type: "text",
+      id: 1,
+      value: ""
+    }
+  ];
+
+  const [arr, setArr] = useState(inputArr);
+
+  const addInput = () => {
+    setArr(s => {
+      const lastId = s[s.length - 1].id;
+      return [
+        ...s,
+        {
+          type: "text",
+          value: ""
+        }
+      ];
+    });
+  };
+
+  const handleChange = e => {
+    e.preventDefault();
+
+    const index = e.target.id;
+    setArr(s => {
+      const newArr = s.slice();
+      newArr[index].value = e.target.value;
+
+      return newArr;
+    });
+  };
+
   /* Github */
   const openGithub = function() {
     window.open("https://github.com/henriquespecian/casamento-nextjs");
   }
-
 
   return (    
     <div>
@@ -178,6 +224,51 @@ export default function Home() {
   </Modal>
   }
 
+  {/* Confirmação de presença  */}
+  {showConfirmacaoModal && <Modal
+    title='Confirmação de Presença'
+    icon={<FilePin variant="32x32_4" />}
+    closeModal={handleCloseConfirmacaoModal }
+    menu={[
+      {
+        name: "Options",
+        list: (
+          <List>
+            <List.Item onClick={handleCloseConfirmacaoModal }>Close</List.Item>
+          </List>
+        ),
+      },
+    ]}>
+      <Fieldset legend='Nome dos presentes'>
+        <div>
+          <label>Nome e sobrenome: </label>
+          <Input type='text' placeholder='Nome e sobrenome' required></Input>
+          <Button onClick={addInput}>Adicionar acompanhante</Button>
+        </div>
+
+          {arr.map((item, i) => {
+          return (
+            <div>
+              <label>Nome e sobrenome: </label>
+              <Input
+                onChange={handleChange}
+                value={item.value}
+                id={i}
+                type={item.type}
+                size="40"
+              />
+            </div>
+          );
+        })}
+        
+      </Fieldset>
+
+      <div className='enviarCancelar'>
+        <Button className='botoes'>Enviar</Button>
+        <Button className='botoes'>Cancelar</Button>
+      </div>
+  </Modal>}
+
 
   {/* Menu Iniciar  */}
   <TaskBar
@@ -199,7 +290,8 @@ export default function Home() {
           Lista de presentes
         </List.Item>
         <List.Item
-          icon={<FilePin variant="32x32_4" />}>
+          icon={<FilePin variant="32x32_4" />}
+          onClick={handleOpenConfirmacaoModal}>
           Confirmação de presença
         </List.Item>
         <List.Divider />
@@ -211,7 +303,6 @@ export default function Home() {
       </List>
     }
   />
-
-    </div>
+  </div>
   );
 }
