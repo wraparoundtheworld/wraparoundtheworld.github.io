@@ -1,3 +1,68 @@
+/* @font-face {
+  font-family: 'SuisseIntlMono';
+  src: local("SuisseIntlMono"), url("/font/SuisseIntlMono-Regular-WebS.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap'); */
+/* 
+fieldset {
+  height: auto !important;
+  width: auto !important;
+  flex-direction: column;
+} */
+
+body {
+  line-height: 1.5;
+}
+
+ul, li {list-style-type: none;}
+
+.ascii {
+  pre {
+text-align: left;
+  code {
+  font-family: monospace;
+  }
+}
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  .portrait {
+    flex: 1;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .wrapintro {
+    padding: 25px 0 0 25px;
+    flex: 1;
+  }
+}
+
+.typewriter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  color: #75fb4c;
+  padding: 20px;
+  font-size: 16px;
+  span {
+    /* font-family: "IBM Plex Mono", monospace; */
+    /* font-weight: 400; */
+    line-height: 1.15;
+    /* font-family: 'SuisseIntlMono', Courier New, Courier, monospace !important; */
+  }
+}
+
 .image-center {
   width: 100%;
   display: block;
@@ -5,10 +70,39 @@
   margin-right: auto;
 }
 
-.hero {
+.image-center {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-hero {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.pictures {
+  /* height: 100%; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .picname {
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    span.active {
+      color: white;
+      background-color: #012470;
+    }
+  }
 }
 
 @media only screen and (min-width: 960px) {
@@ -26,7 +120,7 @@
 
 .modal {
   margin: 1rem 1rem 1rem 1rem;
-  height: 80vh !important;
+  max-height: 80vh !important;
   max-width: 1000px;
 }
 
@@ -36,6 +130,14 @@
   width: 50vw;
   display: flex;
 }
+
+/* .modal-gallery {
+ z-index: 10;
+}
+
+.modal-info {
+  z-index: 8;
+} */
 
 .heart {
   display: inline-block;
@@ -64,8 +166,11 @@
 
 fieldset {
   margin: 1rem 1rem 1rem 1rem;
-  height: 70vh;
-  width: 65vw;
+  height: auto;
+  width: auto;
+  flex-direction: column;
+  /* height: 70vh;
+  width: 65vw; */
   max-width: 500px;
   display: flex;
 }
@@ -141,7 +246,7 @@ div.flip-clock {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 100px;
+  max-width: 150px;
 }
 
 img.dress-code {
@@ -163,4 +268,8 @@ div.polaroid {
 div.container {
   text-align: center;
   padding: 30px 20px;
+}
+
+video::-webkit-media-controls {
+  display: none;
 }

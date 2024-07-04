@@ -1,4 +1,5 @@
 {
+  "homepage": "https://wraparoundtheworld.github.io/",
   "name": "learn-starter",
   "version": "0.1.0",
   "private": true,
@@ -6,23 +7,30 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@leenguyen/react-flip-clock-countdown": "^1.5.0",
+    "@react95/clippy": "^1.0.13",
     "@react95/core": "^7.0.1",
     "@react95/icons": "^2.1.0",
     "@xstyled/styled-components": "^3.8.0",
     "googleapis": "^126.0.1",
-    "next": "12.3.1",
+    "next": "^12.3.1",
     "next-images": "^1.8.5",
     "next-transpile-modules": "^9.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.11"
+    "react-medium-image-zoom": "^5.2.4",
+    "react-player": "^2.16.0",
+    "styled-components": "^5.3.11",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.1.1",
     "next-fonts": "^1.5.1"
   }
 }
