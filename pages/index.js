@@ -41,6 +41,8 @@ import Wallpaper from "../components/wallpaper";
 import { InsideModal } from "../components/insideModal";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
+import { GoogleAnalytics } from "nextjs-google-analytics";
+
 // import { AGENTS, ClippyProvider, useClippy } from "@react95/clippy";
 
 export default function Home() {
@@ -307,6 +309,7 @@ export default function Home() {
 
   return (
     <ThemeProvider theme={"millenium"}>
+      <GoogleAnalytics />
       <GlobalStyle />
       <Wallpaper />
       <DesktopIcons
@@ -317,6 +320,7 @@ export default function Home() {
       {/* <ClippyProvider agentName={AGENTS.CLIPPY}></ClippyProvider> */}
       <div>
         <Head>
+ 
           <title>Wrap around the World</title>
           <link rel="icon" href="/favicon.ico" />
           <meta name="theme-color" content="#8FB0A9"></meta>
