@@ -445,6 +445,7 @@ export default function Home() {
                 muted // Add `muted` here
                 config={{
                   file: {
+                    forceVideo: true,
                     attributes: {
                       autoPlay: true,
                       playsInline: true // Add playsinline attribute
