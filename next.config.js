@@ -9,14 +9,13 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
     basePath: isProd ?  '/wraparoundtheworld.github.io' : '',
+    assetPrefix: isProd ? '/wraparoundtheworld.github.io/' : '',
   reactStrictMode: true,
   output: "export",	
   distDir: "dist",
-   // Add basePath
-  //  basePath: '/wraparoundtheworld.github.io',
   images: {
-    disableStaticImages: true
-  }
+    unoptimized: true,
+  },
 };
 
 module.exports = withTM(withFonts(withImages(nextConfig)));

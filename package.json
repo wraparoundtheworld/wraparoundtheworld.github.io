@@ -5,11 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "export": "next export",
-    "start": "next start",
-    "lint": "next lint",
-    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "start": "next start"
   },
   "dependencies": {
     "@leenguyen/react-flip-clock-countdown": "^1.5.0",
