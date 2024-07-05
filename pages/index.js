@@ -262,7 +262,6 @@ export default function Home() {
     setShowInfotoModal(false);
   }, []);
 
- 
   const [showAlertYes, toggleShowAlertYes] = useState(false);
   const [showAlertNo, toggleShowAlertNo] = useState(false);
 
@@ -324,21 +323,23 @@ export default function Home() {
 
           <meta property="og:title" content="Wrap Around the World" />
           <meta property="og:type" content="website" />
-          <meta
-            property="og:image"
-            itemprop="image"
-            content="/image/4.png"
-          />
+          <meta property="og:image" itemprop="image" content="/image/4.png" />
           <meta
             property="og:image:secure_url"
             itemprop="image"
             content="/image/4.png"
           />
           <meta property="og:image:type" content="image/png" />
-          <meta property="og:url" content="https://wraparoundtheworld.github.io/" />
+          <meta
+            property="og:url"
+            content="https://wraparoundtheworld.github.io/"
+          />
           <meta property="og:description" content="Wrap Around the World" />
           <meta property="og:locale" content="pt_BR" />
-          <meta property="og:site_name" content="wraparoundtheworld.github.io" />
+          <meta
+            property="og:site_name"
+            content="wraparoundtheworld.github.io"
+          />
           <meta property="og:image:width" content="800" />
           <meta property="og:image:height" content="800" />
 
@@ -355,10 +356,19 @@ export default function Home() {
             content="/image/4.png"
           />
           <meta property="twitter:image:type" content="image/png" />
-          <meta property="twitter:url" content="https://wraparoundtheworld.github.io/" />
-          <meta property="twitter:description" content="Wrap Around the World" />
+          <meta
+            property="twitter:url"
+            content="https://wraparoundtheworld.github.io/"
+          />
+          <meta
+            property="twitter:description"
+            content="Wrap Around the World"
+          />
           <meta property="twitter:locale" content="pt_BR" />
-          <meta property="twitter:site_name" content="wraparoundtheworld.github.io" />
+          <meta
+            property="twitter:site_name"
+            content="wraparoundtheworld.github.io"
+          />
           <meta property="twitter:image:width" content="800" />
           <meta property="twitter:image:height" content="800" />
         </Head>
@@ -425,25 +435,26 @@ export default function Home() {
             ]}
           >
             <Frame boxShadow="none">
-<ReactPlayer
-  // light={
-  //   <img src='/image/blue.webp' width="100%" height="100%" />
-  // } 
-  url={videos[currentIndex]}
-  playing
-  controls={false}
-  muted // Add `muted` here
-  config={{ 
-    file: { 
-      attributes: { 
-        autoPlay: true 
-      } 
-    } 
-  }}
-  onEnded={handleEnded}
-  width="100%"
-  height="auto"
-/>
+              <ReactPlayer
+                // light={
+                //   <img src='/image/blue.webp' width="100%" height="100%" />
+                // }
+                url={videos[currentIndex]}
+                playing
+                controls={false}
+                muted // Add `muted` here
+                config={{
+                  file: {
+                    attributes: {
+                      autoPlay: true,
+                      playsInline: true // Add playsinline attribute
+                    },
+                  },
+                }}
+                onEnded={handleEnded}
+                width="100%"
+                height="auto"
+              />
             </Frame>
           </Modal>
         )}
@@ -563,9 +574,9 @@ export default function Home() {
         {/* Modal do spotify  */}
         {showSpotifyModal && (
           <Modal
-          style={{
-            top: "20%",
-          }}
+            style={{
+              top: "20%",
+            }}
             title="Playlist of Moon"
             className="modal-spotify"
             icon={<Mmsys112 variant="32x32_4" />}
@@ -740,54 +751,81 @@ export default function Home() {
                 <div className="hero"></div>
                 <br />
                 <h2>A Defense of Noise</h2>
-        
+
                 <p>
-                In Korea, particularly, the style known as "Newtro" has gained popularity alongside the retro trend. This style consists of low-quality videos resembling VHS tapes and images with glitch effects, all based on noise. Such videos and images are widely shared on the internet. Even in the field of design, graphic designers often apply noise effects such as textures to posters, giving them a vintage feel.
+                  In Korea, particularly, the style known as "Newtro" has gained
+                  popularity alongside the retro trend. This style consists of
+                  low-quality videos resembling VHS tapes and images with glitch
+                  effects, all based on noise. Such videos and images are widely
+                  shared on the internet. Even in the field of design, graphic
+                  designers often apply noise effects such as textures to
+                  posters, giving them a vintage feel.
                 </p>
-                <br/>
+                <br />
                 <img
-                      className="image-center"
-                      src={"/image/vhs.jpg"}
-                      alt="New Jeans"
-                    />
-                        <br/>
+                  className="image-center"
+                  src={"/image/vhs.jpg"}
+                  alt="New Jeans"
+                />
+                <br />
                 <p>
-                Hito Steyerl, in her work "In Defense of the Poor Image," presents the potential of low-resolution and compressed images. She emphasizes that the imperfections and distortions of these images can challenge conventional visual representations and authority. Although these images lose their original aura as they lose their source and become distorted, they can be perceived more democratically.
+                  Hito Steyerl, in her work "In Defense of the Poor Image,"
+                  presents the potential of low-resolution and compressed
+                  images. She emphasizes that the imperfections and distortions
+                  of these images can challenge conventional visual
+                  representations and authority. Although these images lose
+                  their original aura as they lose their source and become
+                  distorted, they can be perceived more democratically.
                 </p>
-                <br/>
+                <br />
                 <img
-                      className="icons"
-                      src={"/image/poorimage.jpg"}
-                      alt="Thomas Ruff, jpeg rl104, 2007"
-                    />
-                        <br/>
+                  className="icons"
+                  src={"/image/poorimage.jpg"}
+                  alt="Thomas Ruff, jpeg rl104, 2007"
+                />
+                <br />
                 <p>
-                Another work, "Proxy Politics: Signal and Noise," addresses the interest in noise reduction in smartphone photography due to the low-quality lenses. The algorithm used in this context analyzes the user-captured image, removes noise, and smoothes the photo. However, there is a drawback in that developers of such algorithms can manipulate the user's perception by distorting the intended reality of the image or creating unwanted results.
-             
+                  Another work, "Proxy Politics: Signal and Noise," addresses
+                  the interest in noise reduction in smartphone photography due
+                  to the low-quality lenses. The algorithm used in this context
+                  analyzes the user-captured image, removes noise, and smoothes
+                  the photo. However, there is a drawback in that developers of
+                  such algorithms can manipulate the user's perception by
+                  distorting the intended reality of the image or creating
+                  unwanted results.
                 </p>
-                <br/>
+                <br />
                 <img
-                      className="icons"
-                      src={"/image/cp.png"}
-                      alt="Computational Photography"
-                    />
-                        <br/>
+                  className="icons"
+                  src={"/image/cp.png"}
+                  alt="Computational Photography"
+                />
+                <br />
                 <p>
-                Even with the advancements of AI and smartphones providing smoother images, why do we still have an obsession with noisy images? Mark Fisher, in "Ghost of My Life," suggests that our current anxieties reveal a desire to linger in the past. Consequently, instead of creating something new, we reinterpret the guaranteed elements and remain in the past.
+                  Even with the advancements of AI and smartphones providing
+                  smoother images, why do we still have an obsession with noisy
+                  images? Mark Fisher, in "Ghost of My Life," suggests that our
+                  current anxieties reveal a desire to linger in the past.
+                  Consequently, instead of creating something new, we
+                  reinterpret the guaranteed elements and remain in the past.
                 </p>
-                <br/>
+                <br />
                 <img
-                      className="image-center"
-                      src={"/image/mark.jpeg"}
-                      alt="Mark Fisher, 1968 – 2017"
-                    />
-                        <br/>
+                  className="image-center"
+                  src={"/image/mark.jpeg"}
+                  alt="Mark Fisher, 1968 – 2017"
+                />
+                <br />
                 <p>
-                Noisy, low-quality images possess a visual neutrality. They can be seen as an alternative language that breaks away from traditional patterns or as a reflection of our desire to dwell in an uneasy past. Researching noise allows for a deeper understanding of the meaning behind such images and our visual experiences.
+                  Noisy, low-quality images possess a visual neutrality. They
+                  can be seen as an alternative language that breaks away from
+                  traditional patterns or as a reflection of our desire to dwell
+                  in an uneasy past. Researching noise allows for a deeper
+                  understanding of the meaning behind such images and our visual
+                  experiences.
                 </p>
                 <br />
                 <br />
-           
               </div>
             </InsideModal>
           </Modal>
