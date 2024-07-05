@@ -43,9 +43,11 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { GoogleAnalytics } from "nextjs-google-analytics";
 
+
 // import { AGENTS, ClippyProvider, useClippy } from "@react95/clippy";
 
 export default function Home() {
+
   /* Video */
   const [videos, setVideos] = useState([
     "retro1.mp4",
@@ -309,7 +311,6 @@ export default function Home() {
 
   return (
     <ThemeProvider theme={"millenium"}>
-      <GoogleAnalytics />
       <GlobalStyle />
       <Wallpaper />
       <DesktopIcons
