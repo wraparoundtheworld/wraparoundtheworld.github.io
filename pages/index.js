@@ -335,10 +335,10 @@ export default function Home() {
             content="/image/4.png"
           />
           <meta property="og:image:type" content="image/png" />
-          <meta property="og:url" content="https://specicampos.com.br" />
-          <meta property="og:description" content="Atenção vamos casar!" />
+          <meta property="og:url" content="https://wraparoundtheworld.github.io/" />
+          <meta property="og:description" content="Wrap Around the World" />
           <meta property="og:locale" content="pt_BR" />
-          <meta property="og:site_name" content="specicampos.com.br" />
+          <meta property="og:site_name" content="wraparoundtheworld.github.io" />
           <meta property="og:image:width" content="800" />
           <meta property="og:image:height" content="800" />
 
@@ -355,10 +355,10 @@ export default function Home() {
             content="/image/4.png"
           />
           <meta property="twitter:image:type" content="image/png" />
-          <meta property="twitter:url" content="https://specicampos.com.br" />
-          <meta property="twitter:description" content="Atenção vamos casar!" />
+          <meta property="twitter:url" content="https://wraparoundtheworld.github.io/" />
+          <meta property="twitter:description" content="Wrap Around the World" />
           <meta property="twitter:locale" content="pt_BR" />
-          <meta property="twitter:site_name" content="specicampos.com.br" />
+          <meta property="twitter:site_name" content="wraparoundtheworld.github.io" />
           <meta property="twitter:image:width" content="800" />
           <meta property="twitter:image:height" content="800" />
         </Head>
@@ -401,7 +401,7 @@ export default function Home() {
                     top: "66%",
                     left: "5%",
                     // height: "auto",
-                    height: `calc(33% - ${TASKBAR_HEIGHT}px)`,
+                    // height: `calc(33% - ${TASKBAR_HEIGHT}px)`,
                     width: "90%",
                     margin: 0,
                   }
@@ -425,16 +425,25 @@ export default function Home() {
             ]}
           >
             <Frame boxShadow="none">
-              <ReactPlayer
-                url={videos[currentIndex]}
-                // controls
-                playing={true}
-                muted={true}
-                // loop={isLooping}
-                onEnded={handleEnded}
-                width="100%"
-                height="auto"
-              />
+<ReactPlayer
+  // light={
+  //   <img src='/image/blue.webp' width="100%" height="100%" />
+  // } 
+  url={videos[currentIndex]}
+  playing
+  controls={false}
+  muted // Add `muted` here
+  config={{ 
+    file: { 
+      attributes: { 
+        autoPlay: true 
+      } 
+    } 
+  }}
+  onEnded={handleEnded}
+  width="100%"
+  height="auto"
+/>
             </Frame>
           </Modal>
         )}
@@ -452,7 +461,7 @@ export default function Home() {
                     top: "66%",
                     left: "5%",
                     // height: "auto",
-                    height: `calc(33% - ${TASKBAR_HEIGHT}px)`,
+                    // height: `calc(33% - ${TASKBAR_HEIGHT}px)`,
                     width: "90%",
                     margin: 0,
                   }
@@ -695,9 +704,9 @@ export default function Home() {
             style={{
               ...(isMobile
                 ? {
-                    top: "3%",
+                    top: "2%",
                     left: "5%",
-                    height: `calc(33% - ${TASKBAR_HEIGHT}px)`,
+                    height: `calc(40% - ${TASKBAR_HEIGHT}px)`,
                     width: "90%",
                     margin: 0,
                   }
@@ -725,7 +734,7 @@ export default function Home() {
               <div>
                 <img
                   className="image-hero"
-                  src={"/image/hero.png"}
+                  src={"/image/hero.webp"}
                   alt="Noise"
                 />
                 <div className="hero"></div>
