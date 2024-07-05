@@ -8,14 +8,9 @@ const withTM = require('next-transpile-modules')([
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-    basePath: isProd ?  '/wraparoundtheworld.github.io' : '',
-    assetPrefix: isProd ? '/wraparoundtheworld.github.io/' : '',
-  reactStrictMode: true,
-  output: "export",	
-  distDir: "dist",
   images: {
-    unoptimized: true,
-  },
+    disableStaticImages: true
+  }
 };
 
 module.exports = withTM(withFonts(withImages(nextConfig)));
