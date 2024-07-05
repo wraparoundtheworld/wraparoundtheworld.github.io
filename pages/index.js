@@ -507,16 +507,16 @@ export default function Home() {
                 </p>
 
                 <Fieldset legend="Interests">
-                  <Checkbox readOnly checked>
+                  <Checkbox readOnly checked id="commons" name="commons">
                     The Commons
                   </Checkbox>
-                  <Checkbox readOnly checked>
+                  <Checkbox readOnly checked id="noise" name="noise">
                     Noise
                   </Checkbox>
-                  <Checkbox readOnly checked>
+                  <Checkbox readOnly checked id="design" name="design">
                     Decolonising Design
                   </Checkbox>
-                  <Checkbox readOnly checked>
+                  <Checkbox readOnly checked id="modernism" name="modernism">
                     Popular Modernism
                   </Checkbox>
                 </Fieldset>
