@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect, useRef } from "react";
 import Typewriter from "typewriter-effect";
 import ReactPlayer from "react-player";
 import Head from "next/head";
+import Script from 'next/script'
 import {
   Modal,
   List,
@@ -321,6 +322,20 @@ export default function Home() {
       <div>
         <Head>
  
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-HDLSD7T305"
+        />
+
+        <Script id="google-analytics">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', ${'${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}'});
+          `}
+        </Script>
+
           <title>Wrap around the World</title>
           <link rel="icon" href="/favicon.ico" />
           <meta name="theme-color" content="#8FB0A9"></meta>
