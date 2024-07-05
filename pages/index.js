@@ -41,7 +41,6 @@ import Wallpaper from "../components/wallpaper";
 import { InsideModal } from "../components/insideModal";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-import { GoogleAnalytics } from "nextjs-google-analytics";
 
 
 // import { AGENTS, ClippyProvider, useClippy } from "@react95/clippy";
