@@ -34,10 +34,10 @@ jobs:
         run: npm run export
 
       - name: Deploy
-
-      env:
-        NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
+  
+          env:
+            NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
