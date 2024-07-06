@@ -405,7 +405,7 @@ export default function Home() {
         {/* Modal Video Test  */}
         {showVideotoModal && div2Visible && (
           <Modal
-            title="Video.exe A Defense of Noise"
+            title="Video.exe"
             className="modal-video"
             icon={<MediaVideo variant="32x32_4" />}
             closeModal={handleCloseVideotoModal}
