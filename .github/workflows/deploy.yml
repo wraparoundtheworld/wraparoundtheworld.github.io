@@ -27,9 +27,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-        env:
-          NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
-          
       - name: Creating the build
         run: npm run build
 
@@ -37,6 +34,9 @@ jobs:
         run: npm run export
 
       - name: Deploy
+
+      env:
+        NEXT_PUBLIC_GA_MEASUREMENT_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
