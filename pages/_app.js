@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
     {/* Global Site Tag (gtag.js) - Google Analytics */}
     <Script
       strategy="afterInteractive"
-      src={`https://www.googletagmanager.com/gtag/js?id=G-HDLSD7T305`}
+      src={`https://www.googletagmanager.com/gtag/js?id="${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}"`}
     />
     <Script
       id="gtag-init"
@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-HDLSD7T305', {
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}', {
             page_path: window.location.pathname,
           });
         `,
