@@ -336,13 +336,13 @@ export default function Home() {
           <meta property="og:image:type" content="image/png" />
           <meta
             property="og:url"
-            content="https://wraparoundtheworld.github.io/"
+            content="https://wraparoundtheworld.online/"
           />
           <meta property="og:description" content="Wrap Around the World" />
           <meta property="og:locale" content="pt_BR" />
           <meta
             property="og:site_name"
-            content="wraparoundtheworld.github.io"
+            content="https://wraparoundtheworld.online/"
           />
           <meta property="og:image:width" content="800" />
           <meta property="og:image:height" content="800" />
@@ -362,7 +362,7 @@ export default function Home() {
           <meta property="twitter:image:type" content="image/png" />
           <meta
             property="twitter:url"
-            content="https://wraparoundtheworld.github.io/"
+            content="https://wraparoundtheworld.online/"
           />
           <meta
             property="twitter:description"
@@ -371,7 +371,7 @@ export default function Home() {
           <meta property="twitter:locale" content="pt_BR" />
           <meta
             property="twitter:site_name"
-            content="wraparoundtheworld.github.io"
+            content="https://wraparoundtheworld.online/"
           />
           <meta property="twitter:image:width" content="800" />
           <meta property="twitter:image:height" content="800" />
@@ -385,7 +385,7 @@ export default function Home() {
                 typewriter
                   .changeDelay(15) // text speed change
                   .typeString(
-                    "seungyongmoon@seungyongs- LOADING..... <BR/>seungyongmoon@seungyongs- WELCOME TO WRAP AROUND THE WORLD<br/>STARTED SERVER ON URL: HTTPS://WRAPAROUNDTHEWORLD.GITHUB.IO"
+                    "seungyongmoon@seungyongs- LOADING..... <BR/>seungyongmoon@seungyongs- WELCOME TO WRAP AROUND THE WORLD<br/>STARTED SERVER ON URL: HTTPS://WRAPAROUNDTHEWORLD.ONLINE"
                   )
                   .callFunction(() => {
                     console.log("String typed out!");
