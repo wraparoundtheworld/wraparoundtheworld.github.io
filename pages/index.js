@@ -414,7 +414,7 @@ export default function Home() {
             style={{
               ...(isMobile
                 ? {
-                    top: "66%",
+                    top: "60%",
                     left: "5%",
                     // height: "auto",
                     // height: `calc(33% - ${TASKBAR_HEIGHT}px)`,
@@ -476,7 +476,7 @@ export default function Home() {
             style={{
               ...(isMobile
                 ? {
-                    top: "66%",
+                    top: "60%",
                     left: "5%",
                     // height: "auto",
                     // height: `calc(33% - ${TASKBAR_HEIGHT}px)`,
@@ -632,7 +632,7 @@ export default function Home() {
                 ? {
                     top: "33%",
                     left: "5%",
-                    // height: "auto",
+                    height: "auto",
                     maxheight: `calc(33% - ${TASKBAR_HEIGHT}px)`,
                     width: "90%",
                     margin: 0,
@@ -660,11 +660,15 @@ export default function Home() {
             <div className="pictures">
               <Frame
                 boxShadow="none"
-                style={
-                  {
-                    // height: "352px",
-                  }
-                }
+                style={{
+                  ...(isMobile
+                    ? {
+                    height: "250px"
+                      }
+                    : {
+                       
+                      }),
+                }}
               >
                 <InsideModal
                   bg="white"
@@ -692,11 +696,15 @@ export default function Home() {
               </Frame>
               <Frame
                 boxShadow="none"
-                style={
-                  {
-                    // height: "352px",
-                  }
-                }
+                style={{
+                  ...(isMobile
+                    ? {
+                    height: "250px"
+                      }
+                    : {
+                       
+                      }),
+                }}
               >
                 <InsideModal
                   boxShadow="out"
