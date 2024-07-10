@@ -644,6 +644,7 @@ export default function Home() {
                     top: "35%",
                     left: "27%",
                     width: "33%",
+                    maxheight: `calc(33% - ${TASKBAR_HEIGHT}px)`,
                   }),
             }}
             menu={[
