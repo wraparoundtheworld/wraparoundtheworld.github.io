@@ -641,6 +641,7 @@ export default function Home() {
                     top: "35%",
                     left: "27%",
                     width: "33%",
+                    // height: "40vh",
                     maxheight: `calc(33% - ${TASKBAR_HEIGHT}px)`,
                   }),
             }}
@@ -663,11 +664,11 @@ export default function Home() {
                 style={{
                   ...(isMobile
                     ? {
-                    height: "250px"
+                        height: "250px",
                       }
                     : {
-                       
-                      }),
+                      height: "36vh",
+                    }),
                 }}
               >
                 <InsideModal
@@ -699,11 +700,11 @@ export default function Home() {
                 style={{
                   ...(isMobile
                     ? {
-                    height: "250px"
+                        height: "250px",
                       }
                     : {
-                       
-                      }),
+                      height: "36vh",
+                    }),
                 }}
               >
                 <InsideModal
