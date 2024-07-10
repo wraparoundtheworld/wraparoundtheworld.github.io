@@ -667,7 +667,7 @@ export default function Home() {
                         height: "250px",
                       }
                     : {
-                      height: "36vh",
+                      height: "37vh",
                     }),
                 }}
               >
@@ -703,7 +703,7 @@ export default function Home() {
                         height: "250px",
                       }
                     : {
-                      height: "36vh",
+                      height: "37vh",
                     }),
                 }}
               >
