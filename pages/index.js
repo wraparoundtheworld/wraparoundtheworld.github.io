@@ -42,11 +42,9 @@ import { InsideModal } from "../components/insideModal";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
-
 // import { AGENTS, ClippyProvider, useClippy } from "@react95/clippy";
 
 export default function Home() {
-
   /* Video */
   const [videos, setVideos] = useState([
     "retro1.mp4",
@@ -325,7 +323,6 @@ export default function Home() {
       {/* <ClippyProvider agentName={AGENTS.CLIPPY}></ClippyProvider> */}
       <div>
         <Head>
-
           <title>Wrap around the World</title>
           <link rel="icon" href="/favicon.ico" />
           <meta name="theme-color" content="#8FB0A9"></meta>
@@ -457,7 +454,7 @@ export default function Home() {
                     forceVideo: true,
                     attributes: {
                       autoPlay: true,
-                      playsInline: true // Add playsinline attribute
+                      playsInline: true, // Add playsinline attribute
                     },
                   },
                 }}
@@ -785,8 +782,8 @@ export default function Home() {
                   images. She emphasizes that the imperfections and distortions
                   of these images can challenge conventional visual
                   representations and authority. Although these images lose
-                  their original aura as they lose their source and become
-                  distorted, they can be perceived more democratically.
+                  their original aura as they lose their original source and
+                  become distorted, they can be perceived more democratically.
                 </p>
                 <br />
                 <img
@@ -798,7 +795,7 @@ export default function Home() {
                 <p>
                   Another work, "Proxy Politics: Signal and Noise," addresses
                   the interest in noise reduction in smartphone photography due
-                  to the low-quality lenses. The algorithm used in this context
+                  to low-quality lenses. The algorithm used in this context
                   analyzes the user-captured image, removes noise, and smoothes
                   the photo. However, there is a drawback in that developers of
                   such algorithms can manipulate the user's perception by
@@ -815,7 +812,7 @@ export default function Home() {
                 <p>
                   Even with the advancements of AI and smartphones providing
                   smoother images, why do we still have an obsession with noisy
-                  images? Mark Fisher, in "Ghost of My Life," suggests that our
+                  images? Mark Fisher, in "Ghosts of My Life," suggests that our
                   current anxieties reveal a desire to linger in the past.
                   Consequently, instead of creating something new, we
                   reinterpret the guaranteed elements and remain in the past.
@@ -830,10 +827,11 @@ export default function Home() {
                 <p>
                   Noisy, low-quality images possess a visual neutrality. They
                   can be seen as an alternative language that breaks away from
-                  traditional patterns or as a reflection of our desire to dwell
-                  in an uneasy past. Researching noise allows for a deeper
-                  understanding of the meaning behind such images and our visual
-                  experiences.
+                  traditional patterns, or as a reflection of our desire to
+                  dwell in an uneasy past or to find new potential, as
+                  Acceleratists sought from sci-fi fictions. Researching noise
+                  allows for a deeper understanding of the meaning behind such
+                  images and our visual experiences.
                 </p>
                 <br />
                 <br />
