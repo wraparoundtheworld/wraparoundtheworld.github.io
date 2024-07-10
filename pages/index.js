@@ -664,7 +664,7 @@ export default function Home() {
                 style={{
                   ...(isMobile
                     ? {
-                        height: "250px",
+                        height: "230px",
                       }
                     : {
                       height: "37vh",
@@ -700,7 +700,7 @@ export default function Home() {
                 style={{
                   ...(isMobile
                     ? {
-                        height: "250px",
+                        height: "230px",
                       }
                     : {
                       height: "37vh",
