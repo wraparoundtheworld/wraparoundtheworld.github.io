@@ -484,7 +484,7 @@ export default function Home() {
                     margin: 0,
                   }
                 : {
-                    top: "52%",
+                    top: "53%",
                     left: "10%",
                     width: "25%",
                   }),
