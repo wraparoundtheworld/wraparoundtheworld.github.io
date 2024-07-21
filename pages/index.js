@@ -50,7 +50,7 @@ export default function Home() {
     "retro1.mp4",
     "retro2.mp4",
     "retro3.mp4",
-    // "video4.mp4",
+    "noise-video.mp4",
     // "video5.mp4",
     // "video6.mp4",
     // "video7.mp4",
