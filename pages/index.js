@@ -179,6 +179,11 @@ export default function Home() {
         name: "Nomad-7.png",
         url: "/image/13.png",
       },
+      {
+        id: "14",
+        name: "Nomad-8.png",
+        url: "/image/14.png",
+      },
     ]),
   };
 
