@@ -159,6 +159,26 @@ export default function Home() {
         name: "Dither.jpg",
         url: "/image/9.jpg",
       },
+      {
+        id: "10",
+        name: "Nomad-4.png",
+        url: "/image/10.png",
+      },
+      {
+        id: "11",
+        name: "Nomad-5.png",
+        url: "/image/11.png",
+      },
+      {
+        id: "12",
+        name: "Nomad-6.png",
+        url: "/image/12.png",
+      },
+      {
+        id: "13",
+        name: "Nomad-7.png",
+        url: "/image/13.png",
+      },
     ]),
   };
 
