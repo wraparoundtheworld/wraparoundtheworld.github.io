@@ -588,7 +588,7 @@ export default function Home() {
                         </li>
                         <li>
                           <a
-                            href="https://instagram.com/wraparoundtheworld"
+                            href="https://instagram.com/foreverunderconstruction"
                             target="_blank"
                           >
                             Instagram
