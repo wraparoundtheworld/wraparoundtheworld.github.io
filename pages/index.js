@@ -573,7 +573,7 @@ export default function Home() {
                         <li>Graphic Designer</li>
                         {/* <li>3D Artist</li>   */}
                         <li>Web Programmer</li>
-                        <li>AI & AR</li>
+                        <li>AI / AR</li>
                       </ul>
                     </div>
                     <div className="introduction">
