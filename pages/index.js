@@ -549,7 +549,7 @@ export default function Home() {
                     Decolonising Design
                   </Checkbox>
                   <Checkbox readOnly checked id="modernism" name="modernism">
-                    Popular Modernism
+                    Graphic Design
                   </Checkbox>
                 </Fieldset>
 
@@ -573,6 +573,7 @@ export default function Home() {
                         <li>Graphic Designer</li>
                         {/* <li>3D Artist</li>   */}
                         <li>Web Programmer</li>
+                        <li>AI & AR</li>
                       </ul>
                     </div>
                     <div className="introduction">
@@ -588,10 +589,10 @@ export default function Home() {
                         </li>
                         <li>
                           <a
-                            href="https://instagram.com/foreverunderconstruction"
+                            href="https://diamondintheback.site/"
                             target="_blank"
                           >
-                            Instagram
+                            Diamond in the Back
                           </a>
                         </li>
                       </ul>
