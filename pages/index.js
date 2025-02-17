@@ -860,13 +860,7 @@ export default function Home() {
                 />
                 <br />
                 <p>
-                  Noisy, low-quality images possess a visual neutrality. They
-                  can be seen as an alternative language that breaks away from
-                  traditional patterns, or as a reflection of our desire to
-                  dwell in an uneasy past or to find new potential, as
-                  Acceleratists sought from sci-fi fictions. Researching noise
-                  allows for a deeper understanding of the meaning behind such
-                  images and our visual experiences.
+                Noisy, low-quality images possess a visual neutrality. They can be seen as an alternative language that breaks away from traditional patterns, or as a reflection of our desire to escape the overwhelming fears of the present by lingering in the past.
                 </p>
                 <br />
                 <br />
