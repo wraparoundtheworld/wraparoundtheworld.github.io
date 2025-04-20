@@ -580,11 +580,8 @@ export default function Home() {
                       Links
                       <ul>
                         <li>
-                          <a
-                            href="https://moonseungyong.github.io/"
-                            target="_blank"
-                          >
-                            Homepage
+                          <a href="https://seungyongmoon.com/" target="_blank">
+                            Seungyong Moon
                           </a>
                         </li>
                         <li>
@@ -593,6 +590,14 @@ export default function Home() {
                             target="_blank"
                           >
                             Diamond in the Back
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://moonseungyong.github.io/"
+                            target="_blank"
+                          >
+                            moonseungyong.github.io
                           </a>
                         </li>
                       </ul>
@@ -693,8 +698,8 @@ export default function Home() {
                         height: "230px",
                       }
                     : {
-                      height: "37vh",
-                    }),
+                        height: "37vh",
+                      }),
                 }}
               >
                 <InsideModal
@@ -729,8 +734,8 @@ export default function Home() {
                         height: "230px",
                       }
                     : {
-                      height: "37vh",
-                    }),
+                        height: "37vh",
+                      }),
                 }}
               >
                 <InsideModal
@@ -860,7 +865,11 @@ export default function Home() {
                 />
                 <br />
                 <p>
-                Noisy, low-quality images possess a visual neutrality. They can be seen as an alternative language that breaks away from traditional patterns, or as a reflection of our desire to escape the overwhelming fears of the present by lingering in the past.
+                  Noisy, low-quality images possess a visual neutrality. They
+                  can be seen as an alternative language that breaks away from
+                  traditional patterns, or as a reflection of our desire to
+                  escape the overwhelming fears of the present by lingering in
+                  the past.
                 </p>
                 <br />
                 <br />
