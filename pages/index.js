@@ -555,7 +555,7 @@ export default function Home() {
 
                 <p>
                   Learn more about{" "}
-                  <a href="https://moonseungyong.github.io/" target="_blank">
+                  <a href="https://seungyongmoon.com/" target="_blank">
                     Seungyong Moon.
                   </a>
                 </p>
