@@ -540,7 +540,7 @@ export default function Home() {
 
                 <Fieldset legend="Interests">
                   <Checkbox readOnly checked id="commons" name="commons">
-                    The Commons
+                    Design Research
                   </Checkbox>
                   <Checkbox readOnly checked id="noise" name="noise">
                     Noise
