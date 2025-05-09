@@ -556,7 +556,7 @@ export default function Home() {
                 <p>
                   Learn more about{" "}
                   <a href="https://seungyongmoon.com/" target="_blank">
-                    Seungyong Moon.
+                    Seungyong Moon
                   </a>
                 </p>
               </Tab>
