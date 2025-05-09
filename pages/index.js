@@ -184,6 +184,11 @@ export default function Home() {
         name: "Nomad-8.png",
         url: "/image/14.png",
       },
+      {
+        id: "15",
+        name: "Dystopia.png",
+        url: "/image/15.png",
+      },
     ]),
   };
 
