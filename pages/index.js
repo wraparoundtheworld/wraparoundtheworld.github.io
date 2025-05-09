@@ -191,8 +191,13 @@ export default function Home() {
       },
       {
         id: "16",
-        name: "Nomad-8.png",
+        name: "Nomad-9.png",
         url: "/image/16.png",
+      },
+      {
+        id: "17",
+        name: "Dystopia-2.png",
+        url: "/image/17.png",
       },
     ]),
   };
