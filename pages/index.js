@@ -394,12 +394,12 @@ export default function Home() {
           <meta
             property="twitter:image"
             itemprop="image"
-            content="/image/4.png"
+            content="/image/15.png"
           />
           <meta
             property="twitter:image:secure_url"
             itemprop="image"
-            content="/image/4.png"
+            content="/image/15.png"
           />
           <meta property="twitter:image:type" content="image/png" />
           <meta
