@@ -369,11 +369,11 @@ export default function Home() {
 
           <meta property="og:title" content="Wrap Around the World" />
           <meta property="og:type" content="website" />
-          <meta property="og:image" itemprop="image" content="/image/4.png" />
+          <meta property="og:image" itemprop="image" content="/image/15.png" />
           <meta
             property="og:image:secure_url"
             itemprop="image"
-            content="/image/4.png"
+            content="/image/15.png"
           />
           <meta property="og:image:type" content="image/png" />
           <meta
