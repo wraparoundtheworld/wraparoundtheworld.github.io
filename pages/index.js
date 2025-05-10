@@ -401,7 +401,7 @@ export default function Home() {
             itemprop="image"
             content="/image/15.png"
           />
-          <meta property="twitter:image:type" content="image/png" />
+          <meta property="twitter:image:type" content="image/15.png" />
           <meta
             property="twitter:url"
             content="https://wraparoundtheworld.online/"
