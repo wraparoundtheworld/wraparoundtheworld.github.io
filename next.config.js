@@ -8,6 +8,7 @@ const withTM = require('next-transpile-modules')([
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
+  output: 'export', // Add this line
   images: {
     disableStaticImages: true
   }
