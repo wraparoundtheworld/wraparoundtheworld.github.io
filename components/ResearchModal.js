@@ -108,12 +108,13 @@ export default function ResearchModal({ show, onClose }) {
           />
           <br />
           <p>
-            Even with the advancements of AI and smartphones providing smoother
+           Even with the advancements of AI and smartphones providing smoother
             images, why do we still have an obsession with noisy images? Mark
             Fisher, in "Ghosts of My Life," suggests that our current anxieties
             reveal a desire to linger in the past. Consequently, instead of
             creating something new, we reinterpret the guaranteed elements and
-            remain in the past.
+            remain in the past. In this way, the aesthetics of noise operate not
+            only as stylistic choices but as cultural symptoms.
           </p>
           <br />
           <img
